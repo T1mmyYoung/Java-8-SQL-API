@@ -1,0 +1,6 @@
+CREATE TABLE `service_directory` (
+  `service_code` int(11) NOT NULL,
+  `service_name` varchar(45) DEFAULT NULL,
+  `fee` float DEFAULT NULL,
+  PRIMARY KEY (`service_code`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

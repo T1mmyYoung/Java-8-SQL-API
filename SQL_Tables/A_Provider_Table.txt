@@ -1,0 +1,11 @@
+CREATE TABLE `provider` (
+  `provider_id` varchar(10) NOT NULL,
+  `provider_name` varchar(35) NOT NULL,
+  `street` varchar(45) NOT NULL,
+  `apt` varchar(10) DEFAULT NULL,
+  `state` varchar(2) NOT NULL,
+  `zip` int(11) NOT NULL,
+  `city` varchar(45) DEFAULT NULL,
+  PRIMARY KEY (`provider_id`),
+  UNIQUE KEY `provider_provider_id_uindex` (`provider_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

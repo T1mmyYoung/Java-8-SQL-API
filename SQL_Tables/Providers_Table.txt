@@ -1,0 +1,13 @@
+CREATE TABLE `provided_services` (
+  `provider_id` varchar(10) DEFAULT NULL,
+  `date_of_service` varchar(11) NOT NULL,
+  `recorded_time` varchar(21) NOT NULL,
+  `provider_name` varchar(26) NOT NULL,
+  `service_code` int(11) NOT NULL,
+  `service_name` varchar(21) NOT NULL,
+  `member_name` varchar(26) NOT NULL,
+  `member_id` int(11) DEFAULT NULL,
+  `comments` varchar(101) NOT NULL,
+  `transaction_id` varchar(11) NOT NULL,
+  KEY `services_provided_members_member_id_fk` (`member_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci

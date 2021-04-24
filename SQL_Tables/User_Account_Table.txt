@@ -1,0 +1,10 @@
+CREATE TABLE `User_Accounts` (
+  `Account_ID` int(10) unsigned NOT NULL AUTO_INCREMENT,
+  `Account_Type` varchar(8) NOT NULL,
+  `Username` varchar(20) NOT NULL,
+  `Hash_Password` int(50) DEFAULT NULL,
+  `Email` varchar(60) NOT NULL,
+  PRIMARY KEY (`Username`),
+  UNIQUE KEY `Account_ID_UNIQUE` (`Account_ID`),
+  UNIQUE KEY `Username_UNIQUE` (`Username`)
+) ENGINE=InnoDB AUTO_INCREMENT=1000000000 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
