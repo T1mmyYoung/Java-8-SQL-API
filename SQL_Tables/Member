@@ -1,1 +1,14 @@
-//This is the member table written in SQL
+//This is the member table, SQL .dll 
+CREATE TABLE `members` (
+  `member_id` varchar(10) NOT NULL,
+  `first_name` varchar(20) NOT NULL,
+  `last_name` varchar(30) DEFAULT NULL,
+  `street` varchar(45) NOT NULL,
+  `apt` varchar(10) DEFAULT NULL,
+  `state` varchar(2) DEFAULT NULL,
+  `city` varchar(25) DEFAULT NULL,
+  `zip` int(11) NOT NULL,
+  `membership_state` varchar(20) NOT NULL,
+  PRIMARY KEY (`member_id`),
+  UNIQUE KEY `members_member_id_uindex` (`member_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
